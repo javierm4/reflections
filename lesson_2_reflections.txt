@@ -1,0 +1,4 @@
+What happens when you initialize a repository? Why do you need to do it?
+It creates a .git metadata file to store all the commit and modifications info.
+You need to write 'git init' in the directory you want to create the repository.
+
