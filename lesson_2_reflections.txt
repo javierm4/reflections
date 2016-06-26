@@ -2,3 +2,5 @@ What happens when you initialize a repository? Why do you need to do it?
 It creates a .git metadata file to store all the commit and modifications info.
 You need to write 'git init' in the directory you want to create the repository.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+It lets you pre-load the files that will further be added to the repository though a commit. The value of it is that it lets you see check witch files you're adding or might be missing in your commit.
