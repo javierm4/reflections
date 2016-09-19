@@ -4,3 +4,23 @@ You need to write 'git init' in the directory you want to create the repository.
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 It lets you pre-load the files that will further be added to the repository though a commit. The value of it is that it lets you see check witch files you're adding or might be missing in your commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+git diff --staged let's you see how many differences there are between the staging area and the latest commint.
+In this way, you can see if you're going to commit only one logical change or more. You can also just use git diff (with no arguments) to compare the differences between when you started with the one in the staging area.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+If I want to experiment with new small features that might not make the final cut.
+Branches help in case I don't want to alter the original code in my master branch.
+
+How do the diagrams help you visualize the branch structure?
+It let's you see the relation they have to previous (or parent) commits so you can trece them to the beggining of the commits.
+Also it let's you visualize some problems you might encounter if you're not careful with your branches.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+To unify the experimental branch to the master branch and smartly unify the code.
+Because it's easy to understand the parenting commits created after branching and merging.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+The pros are that you save a lot of time by mergin multiple pieces of code at once.
+The cons are that the different alterations of the same code may intruduce unexpected bugs or may not be compatible with the other persons alterations (incompatibility would be the main issue).
